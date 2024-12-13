@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Post | Mini Project</title>
+    <style>
+        body{
+            background-color: #000;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            justify-content: center;
+            align-items: center;
+        }
+        div{
+            margin: 50px;
+        }
+        input, textarea{
+            padding: 15px 30px;
+            border-radius: 30px;
+            border: none;
+            outline: none;
+        }
+        button{
+            background-color: orange;
+            color: #fff;
+            padding: 15px 30px;
+            outline: none;
+            border: none;
+            border-radius: 30px;
+        }
+    </style>
+</head>
+<body>
+    <form method="post" action="/post">
+        <div>
+            <input type="text" name="username" placeholder="Enter username">
+        </div>
+        <div>
+            <textarea name="content" placeholder="Enter the content"></textarea>
+        </div>
+        <div>
+            <button>Create post</button>
+        </div>
+    </form>
+</body>
+</html>

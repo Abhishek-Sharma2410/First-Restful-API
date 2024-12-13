@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posts | Mini Project</title>
+    <style>
+        body{
+            background-color: #000;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+        }
+        div{
+            background-color: #fff;
+            width: 40%; 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            color: #000;
+            border-radius: 30px;
+        }
+        button{
+            background-color: orange;
+            padding: 15px 30px;
+            border: none;
+            outline: none;
+            border-radius: 30px;
+        }
+        button a{
+            color: #fff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Abhishek Page</h1>
+    <% for(let post of posts) { %>
+
+        <div>
+            <h3><%= post.username %>'s post</h3>
+            <p><%= post.content %></p>
+        </div>
+
+    <% } %>    
+
+    <button><a href="http://localhost:8080/post/new">Create a new Post</a></button>
+</body>
+</html>
